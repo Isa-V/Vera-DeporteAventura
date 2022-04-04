@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuracion -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- css y favicon -->
+    <link rel="shortcut icon" href="../media/mountain-favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/stylesheet.css"> <!--importando hoja de estilos-->
+
+    <title>Deporte Aventura - Descubre</title>
+</head>
+
+<body class="bodyDescubre">
+    <header>
+        <nav>
+            <section class="navLogo">
+                <a href="../index.html">
+                    <img src="../media/mountain.svg" alt=logo>
+                </a>
+            </section>
+
+            <section class="navMenu">
+                <a href="descubre.html">Descubre</a>
+                <a href="sobre-nosotros.html">Nosotros</a>
+            </section>
+
+            <section class="navCuenta">
+                <a href="iniciar-sesion.html">
+                    <input type="button" value="Iniciar sesión" class="buttonLine">
+                </a>
+                <a href="crear-cuenta.html">
+                    <input type="button" value="Crea tu cuenta" class="buttonRegular">
+                </a>
+            </section>
+        </nav>
+
+        <section class="descubreBuscadorImg">
+            <h1>Descubre</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+    </header>
+
+    <Section class="containerBuscador">
+        <div class="descubreBuscador">
+            <h2>Buscador</h2>
+            <label for="buscar">Destino/Ubicación</label>
+            <input type="text" name="buscar" placeholder="Ejemplo: Santiago, Chile" class="blackInputAuto">
+            <label for="fecha">Fecha de la aventura</label>
+            <input type="date" name="fecha" id="" class="blackInputAuto">
+            <label for="tipo">Tipo de Aventura</label>
+            <div class="descubreBuscadorTipo">
+                <input type="checkbox" name="tipo" id=""> Todas
+                <input type="checkbox" name="tipo" id=""> Trekking
+                <input type="checkbox" name="tipo" id=""> Canyoning
+                <input type="checkbox" name="tipo" id=""> Rafting
+                <input type="checkbox" name="tipo" id=""> Aire libre
+                <input type="checkbox" name="tipo" id=""> Senderismo
+            </div>
+
+            <input type="button" value="Buscar" class="buttonBlack">
+        </div>
+    
+        <div class="descubreAventuras">
+            <div class="cardBuscarAventura">
+                <div class="cardBuscarAventuraImg"></div>
+                <div class="cardBuscarAventuraText">
+                    <h3>Aventura 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+
+            <div class="cardBuscarAventura">
+                <div class="cardBuscarAventuraImg"></div>
+                <div class="cardBuscarAventuraText">
+                    <h3>Aventura 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+
+
+                
+    
+        </div>
+    
+    </Section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerEmpresa">
+            <img src="../media/mountain.svg" alt=logo>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="footerSocialMedia">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="../media/facebook.svg" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="../media/instagram.svg" alt="instagram">
+                </a>
+
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img src="../media/twitter.svg" alt="twitter">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="../media/youtube.svg" alt="youtube">
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="footerExplora">
+            <h3>Explora</h3>
+            <ul>
+                <li>Trekking</li>
+                <li>Canyoning</li>
+                <li>Rafting</li>
+                <li>Aire libre</li>
+            </ul>
+        </div>
+
+        <div class="footerColabora">
+            <h3>Colabora</h3>
+            <ul>
+                <li>Envía tus fotos</li>
+                <li>Comparte tus actividades</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

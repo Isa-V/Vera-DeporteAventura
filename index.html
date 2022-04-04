@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuracion -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- css y favicon -->
+    <link rel="shortcut icon" href="media/mountain-favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/stylesheet.css"> <!--importando hoja de estilos-->
+
+    <title>Deporte Aventura - Home</title>
+</head>
+
+<body class="bodyHome">
+    <header class="headerHome">
+        <!-- Menu de navegacion -->
+        <nav>
+            <section class="navLogo">
+                <a href="index.html">
+                    <img src="media/mountain.svg" alt=logo>
+                </a>
+            </section>
+
+            <section class="navMenu">
+                <a href="pages/descubre.html">Descubre</a>
+                <a href="pages/sobre-nosotros.html">Nosotros</a>
+            </section>
+
+            <section class="navCuenta">
+                <a href="pages/iniciar-sesion.html">
+                    <input type="button" value="Iniciar sesión" class="buttonLine">
+                </a>
+                <a href="pages/crear-cuenta.html">
+                    <input type="button" value="Crea tu cuenta" class="buttonRegular">
+                </a>
+            </section>
+        </nav>
+
+        <!-- foto portada -->
+        <article class="headerFoto">
+            <section class="headerFoto--texto">
+                <h1>Tu aventura empieza hoy</h1>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaqu</p>
+            </section>
+
+            <section class="headerFoto--direccion">
+                <label for="buscaDireccion" class="direccion">Busca aventuras cerca de ti:</label>
+                <input type="text" name="buscaDireccion" placeholder="Ingresa una dirección" class="horizontal">
+                <input type="button" value="Buscar" class="buttonRegular">
+            </section>
+        </article>
+    </header>
+
+
+    <!-- Seccion aventuras -->
+    <article class="aventuras">
+        <h2>Aventuras destacadas</h2>
+        <section class="cardsContenedor">
+            <div class="card">
+                <img src="media/aguas-san-ramon.jpg" alt="">
+                <div class="cardTitle">
+                    <h3 class="cardText">Auguas san ramon</h3>
+                    <h5 class="cardText">Santiago de chile</h5>
+                </div>                
+                <div class="cardInfo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <input type="button" value="Descubrir aventura" class="buttonBlack">
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="media/aguas-san-ramon.jpg" alt="">
+                <div class="cardTitle">
+                    <h3 class="cardText">Auguas san ramon</h3>
+                    <h5 class="cardText">Santiago de chile</h5>
+                </div>                
+                <div class="cardInfo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <input type="button" value="Descubrir aventura" class="buttonBlack">
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="media/aguas-san-ramon.jpg" alt="">
+                <div class="cardTitle">
+                    <h3 class="cardText">Auguas san ramon</h3>
+                    <h5 class="cardText">Santiago de chile</h5>
+                </div>                
+                <div class="cardInfo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <input type="button" value="Descubrir aventura" class="buttonBlack">
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+
+
+
+    <!-- Seccion descubre y comparte -->
+    <article class="descubre">
+        <h2>Descubre y comparte las mejores aventuras</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+        <input type="button" value="Crear cuenta" class="buttonBlack">
+    </article>
+
+
+
+
+
+    <!-- Seccion Tipos de actividades -->
+    <article class="actividades">
+        <h2>¿Qué actividad estás buscando?</h2>
+        <section class="cardsContenedor">
+            <div class="card">
+                <img src="media/mountain-favicon.svg" alt="icon" class="cardIcon">
+                <div class="cardTitle">
+                    <h3 class="cardText">Trekking</h3>
+                </div>
+                <div class="cardInfo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <input type="button" value="Explorar" class="buttonBlack">
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="media/mountain-favicon.svg" alt="icon" class="cardIcon">
+                <div class="cardTitle">
+                    <h3 class="cardText">Canyoning</h3>
+                </div>
+                <div class="cardInfo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <input type="button" value="Explorar" class="buttonBlack">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="media/mountain-favicon.svg" alt="icon" class="cardIcon">
+                <div class="cardTitle">
+                    <h3 class="cardText">Rafting</h3>
+                </div>
+                <div class="cardInfo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <input type="button" value="Explorar" class="buttonBlack">
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+
+
+
+    <!-- Seccion Tipos de explorar -->
+
+    <article class="explorar">
+        <video id="background-video" autoplay loop muted poster="media/waterfall-background-frame.jpg">
+            <source src="media/waterfall-background.mp4" type="video/mp4">
+        </video>
+
+        <h2>Te ayudamos a encontrar
+            tu próxima aventura</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+        <a href="pages/descubre.html">
+            <input type="button" value="Explorar" class="buttonBlack">
+        </a>
+    </article>
+
+    <!-- Seccion suscribete al newsletter -->
+    <article class="newsletter">
+        <h2>Newsletter</h2>
+        <p>Suscríbete para recibir nuestros consejos para tu próxima aventura</p>
+
+        <section>
+            <input type="email" name="email" placeholder="Correo electrónico" class="blackInput">
+            <input type="button" value="Suscribirme" class="buttonBlack">
+        </section>
+    </article>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerEmpresa">
+            <img src="media/mountain.svg" alt=logo>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="footerSocialMedia">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="media/facebook.svg" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="media/instagram.svg" alt="instagram">
+                </a>
+
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img src="media/twitter.svg" alt="twitter">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="media/youtube.svg" alt="youtube">
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="footerExplora">
+            <h3>Explora</h3>
+            <ul>
+                <li>Trekking</li>
+                <li>Canyoning</li>
+                <li>Rafting</li>
+                <li>Aire libre</li>
+            </ul>
+        </div>
+
+        <div class="footerColabora">
+            <h3>Colabora</h3>
+            <ul>
+                <li>Envía tus fotos</li>
+                <li>Comparte tus actividades</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
