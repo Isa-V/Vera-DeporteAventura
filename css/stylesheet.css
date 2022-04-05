@@ -6,16 +6,15 @@ body{
 
 .bodyHome{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: 700px auto 500px auto 500px 400px auto;
 
 }
-#bodyCrear-cuenta{
+/* #bodyCrear-cuenta{
     display: grid;
-    grid-template-columns: auto-fit;
+    grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
-    width: 100%;
-}
+} */
 
 h1 {
     font-size: 50px;
