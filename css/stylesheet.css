@@ -10,11 +10,11 @@ body{
     grid-template-rows: 700px auto 500px auto 500px 400px auto;
 
 }
-/* #bodyCrear-cuenta{
+#bodyCrear-cuenta{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
-} */
+}
 
 h1 {
     font-size: 50px;
@@ -323,6 +323,7 @@ nav a:hover {
 /* ------Sobre nosotros------ */
 .bodySobreNosotros {
     display: grid;
+    grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
 }
 
@@ -340,7 +341,7 @@ nav a:hover {
 
 .sobreNosotrosMision{
     background-color: #ffffff;
-    padding: 3rem 5rem 3rem 5rem;
+    padding: 3rem 15% 3rem 15%;
 }
 
 #nosotrosImg1{
@@ -370,7 +371,7 @@ nav a:hover {
 }
 .sobreNosotrosComunidad{
     background-color: #ebebeb;
-    padding: 3rem 5rem 3rem 5rem;
+    padding: 3rem 15% 3rem 15%;
 }
 
 /* ------ Descubre ------ */
@@ -571,7 +572,7 @@ footer ul li {
 
     /* ------Crear cuenta------ */
     #bodyCrear-cuenta{
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         grid-template-rows: auto auto auto;
     }
 
@@ -586,16 +587,21 @@ footer ul li {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-top: 1rem;
     }
 
     .seccionDatos{
-        width: 70%;
+        width: 65%;
         margin: 5rem 4rem 5rem 4rem;
         align-self: center;
     }
 
     .SeccionBoton {
         align-self: center;
+    }
+
+    .seccionDatosTituloCambiar {
+        margin-bottom: 0;
     }
 
     /* ------Sobre nosotros------ */
