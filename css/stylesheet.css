@@ -28,28 +28,38 @@ h1 {
     border: none;
     text-align: center;
     width: fit-content;
+    transition: 0.2s ease-in;
     
 }
 .buttonRegular:hover{
     background-color: rgb(226, 226, 226);
     color: black;
     cursor: pointer;
+    transform: scale(1.05, 1.05);
 }
 .buttonLine {
     background-color: rgba(0, 0, 0, 0.05);
     padding: 0.5rem 1rem 0.5rem 1rem;
-    color: rgb(255, 255, 255);
-    border-color: rgb(255, 255, 255);
-    border: solid;
+    color: #dedede;
+    background: transparent;
+    border: 2px solid #dedede;
     text-align: center;
-    border-width: 2px;
     width: fit-content;
+    outline: none;
+    transition: 0.2s ease-in;
 }
+
+
 .buttonLine:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+/*     background-color: rgba(0, 0, 0, 0.05);
     color: rgb(226, 226, 226);
-    border-color: rgb(226, 226, 226);
+    border-color: rgb(226, 226, 226); */
+    transition: 0.2s ease-in;
+    background: #ffffff55;
+    border: 2px solid #ffffff;
     cursor: pointer;
+    color: #dedede;
+    transform: scale(1.05, 1.05);
 }
 .buttonBlack {
     background-color: black;
@@ -58,11 +68,13 @@ h1 {
     text-align: center;
     color: white;
     width: fit-content;
+    transition: 0.1s ease-in;
 }
 .buttonBlack:hover{
     background-color: rgb(0, 168, 112);
     color: rgb(255, 255, 255);
     border-color: black;
+    transform: scale(1.05, 1.05);
 }
 
 .horizontal{
@@ -124,10 +136,30 @@ nav a {
     text-decoration: none;
     color: #e6e6e6;
 }
-nav a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-    text-underline-offset: 3px;
+
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #e6e6e6;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 
