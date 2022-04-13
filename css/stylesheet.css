@@ -250,57 +250,46 @@ nav a {
 
 
 /* ------Crear cuenta------ */
-.seccionCrearCuenta {
-    display: flex;
+
+
+.seccionCrearCuenta{
+    margin-top: 75px;
+    align-items: center;
 }
 
-.seccionDatos{
-    margin: 8rem 5rem 5rem 8rem;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+.seccionDatos {
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 5%;
+    height: 800px;
 }
-.seccionImg{
+
+.seccionDatosTitulo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.seccionImg1 {
     background-image: url(../media/woman-backpacker.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
+    height: 800px;
 }
 
-.seccionImg2{
+.seccionImg2 {
     background-image: url(../media/highway.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
+    height: 800px;
 }
-
-.seccionInputs1 {
-    display: flex;
-    flex-direction: row;
-    justify-items: flex-start;
-    align-content: stretch;
-}
-
-.seccionInputs2 {
-    display: flex;
-    flex-direction: column;
-}
-
 .seccionCheckbox {
     margin-top: 2rem;
 }
 .SeccionBoton{
     margin-top: 2rem;
-}
-
-.seccionDatosTitulo h2 {
-    margin-bottom: 0.1rem;
-}
-
-.seccionDatosTitulo h4 {
-    display: inline-block;
 }
 
 
@@ -351,17 +340,12 @@ nav a {
     color: #ffffff;
 }
 
-.containerBuscador{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
 
 .descubreBuscador{
     background-color: #e6e6e6;
-    padding: 15%;
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    padding: 5%;
 }
 .descubreBuscadorTipo{
     display: grid;
@@ -369,7 +353,7 @@ nav a {
     margin-bottom: 1rem;
 }
 .descubreAventuras{
-    padding: 15% 15% 15% 5%;
+    padding: 5%
 }
 .cardBuscarAventura{
     background-color: #e6e6e6;
@@ -445,5 +429,24 @@ footer ul li {
         display: inline-block;
         width: 100%;
     }
+
+    .seccionInputs {
+        height: 950px;
+    }
+
+    .seccionImg1 {
+        display: none;
+    }
+
+    .seccionImg2 {
+        display: none;
+    }
     
+    .seccionCrearCuenta{
+        margin-top: 90px;
+    }
+
+    .descubreBuscadorImg {
+        padding: 8rem 3rem 3rem 3rem;
+    }
 }

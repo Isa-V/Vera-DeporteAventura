@@ -23,9 +23,9 @@
     <title>Deporte Aventura - Descubre</title>
 </head>
 
-<body class="bodyDescubre">
+<body class="container-fluid">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
             <a class="navbar-brand navLogo" href="../index.html">
                 <img src="../media/mountain.svg" alt=logo>
@@ -54,14 +54,15 @@
             </div>
         </nav>
 
-        <section class="descubreBuscadorImg">
-            <h1>Descubre</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </section>
     </header>
 
-    <Section class="containerBuscador">
-        <div class="descubreBuscador">
+    <main class="row descubreBuscadorImg">
+        <h1>Descubre</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </main>
+
+    <Section class="row containerBuscador">
+        <div class="col-lg-4 col-md-5 col-sm-12 descubreBuscador">
             <h2>Buscador</h2>
             <label for="buscar">Destino/Ubicación</label>
             <input type="text" name="buscar" placeholder="Ejemplo: Santiago, Chile" class="blackInputAuto">
@@ -80,20 +81,51 @@
             <input type="button" value="Buscar" class="buttonBlack">
         </div>
     
-        <div class="descubreAventuras">
-            <div class="cardBuscarAventura">
-                <div class="cardBuscarAventuraImg"></div>
-                <div class="cardBuscarAventuraText">
-                    <h3>Aventura 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <div class="col-lg-8 col-md-7 col-sm-12 descubreAventuras">
+
+
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../media/entre-lagos-parque-huerquehue.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Aventura 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio neque sequi, libero inventore odio officiis dolore.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="cardBuscarAventura">
-                <div class="cardBuscarAventuraImg"></div>
-                <div class="cardBuscarAventuraText">
-                    <h3>Aventura 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../media/entre-lagos-parque-huerquehue.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Aventura 2</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../media/entre-lagos-parque-huerquehue.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Aventura 3</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -105,7 +137,7 @@
     </Section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="row">
         <div class="footerEmpresa">
             <img src="../media/mountain.svg" alt=logo>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -128,7 +160,7 @@
         </div>
 
         <div class="footerExplora">
-            <h3>Explora</h3>
+            <h5>Explora</h5>
             <ul>
                 <li>Trekking</li>
                 <li>Canyoning</li>
@@ -138,7 +170,7 @@
         </div>
 
         <div class="footerColabora">
-            <h3>Colabora</h3>
+            <h5>Colabora</h5>
             <ul>
                 <li>Envía tus fotos</li>
                 <li>Comparte tus actividades</li>
