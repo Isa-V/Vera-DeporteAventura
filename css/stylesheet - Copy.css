@@ -2,44 +2,31 @@
 body{
     margin: 0;
     font-family: 'Heebo', sans-serif;
+
     /* Cambiar color de fondo del navbar */
     --bs-dark-rgb: 0,0,0;
 }
 
-/* sobreescribir los margenes de los bordes gutters */
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    padding-right: 10px;
-    padding-left: 10px;
+.bodyHome{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 700px auto 500px auto 500px 400px auto;
 }
 
-
-
-
-/* ----- paddings ------*/
-.paddingLR {
-    padding-left: 10%;
-    padding-right: 10%;
+#bodyCrear-cuenta{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
 }
 
-.paddingTB {
-    padding-top: 8%;
-    padding-bottom: 8%;
-}
-
-.paddingTittle {
-    padding-bottom: 4%;
-}
-
-
-/* ----- titles ------*/
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     margin: 1rem 0 1rem 0;
 }
 
-
 /* ------botones e imputs------*/
 .buttonRegular {
+    margin: 10px 5px 5px 5px;
     background-color: rgb(255, 255, 255);
     padding: 0.6rem 1rem 0.6rem 1rem;
     border: none;
@@ -55,6 +42,7 @@ h1 {
     transform: scale(1.05, 1.05);
 }
 .buttonLine {
+    margin: 10px 5px 5px 5px;
     background-color: rgba(0, 0, 0, 0.05);
     padding: 0.5rem 1rem 0.5rem 1rem;
     color: #dedede;
@@ -65,6 +53,8 @@ h1 {
     outline: none;
     transition: 0.2s ease-in;
 }
+
+
 .buttonLine:hover {
 /*     background-color: rgba(0, 0, 0, 0.05);
     color: rgb(226, 226, 226);
@@ -74,7 +64,8 @@ h1 {
     border: 2px solid #ffffff;
     cursor: pointer;
     color: #dedede;
-    transform: scale(1.05, 1.05); 
+    transform: scale(1.05, 1.05);
+    
 }
 .buttonBlack {
     background-color: black;
@@ -84,7 +75,6 @@ h1 {
     color: white;
     width: fit-content;
     transition: 0.1s ease-in;
-    border-radius: 0;
 }
 .buttonBlack:hover{
     background-color: rgb(0, 168, 112);
@@ -123,9 +113,6 @@ h1 {
     padding-bottom: 0.5rem;
 }
 
-
-
-
 /* ------Menu de navegacion con Bootstrap------ */
 .navLogo img {
     width: 3rem;
@@ -134,48 +121,104 @@ h1 {
     background-color: rgb(0, 0, 0);
 }
 nav a {
-    margin: 2px 5px 2px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
 
+/* ------Menu de navegacion sin Bootstrap------ */
+/* nav{
+    background-color: black;
+    height: 5rem;
+    width: 96%;
+    position: fixed;
+    display: grid;
+    padding: 0 2rem 0 2rem;
+    grid-template-columns: 1fr 4fr 1.5fr;
+    justify-items: stretch;
+    align-items: center;
+}
+.navLogo img {
+    width: 3rem;
+}
+nav .navMenu{
+    display: flex;
+    justify-content: flex-end;
+}
+nav .navCuenta{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav a {
+    padding: 0 0.8rem 0 0.8rem;
+    text-decoration: none;
+    color: #e6e6e6;
+} */
+
+/* 
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #e6e6e6;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ */
+
 /* ------Home------ */
 /* Seccion 1: foto*/
-.mainHome {
-    position: relative;
-    margin-top: 70px;
+.headerHome {
     background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url(../media/index-photo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    color: #ffffff;
 }
 
-.mainFoto--texto{
+.headerFoto {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    margin: 0 35% 0 10%;
+    color: #ffffff;
+    height: 100%;
+}
+
+.headerFoto--texto{
     padding-bottom: 2rem;
 }
 
-.form-controlHome{
-    display: inline-block;
-    width: 50%;
+.headerFoto--direccion{
+    padding-bottom: 8rem;
 }
-
-
-
-
-
 
 /* Seccion 2: aventuras*/
 .aventuras{
     background-color: #ebebeb;
+    padding: 5% 10% 5% 10%;
     display: flex;
     flex-flow: column nowrap;
     text-align: center;
 }
+
 .cardsContenedor {
     display: flex;
     flex-direction: row;
@@ -184,12 +227,30 @@ nav a {
 }
 
 .card {
-    margin-bottom: 5%;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 18rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #000000;
 }
-
+.cardText {
+    margin: 5px 0 16px 0;
+}
+.cardTitle{
+    margin: 10px 10px 0 10px
+}
+.cardInfo{
+    margin: 0 10px 40px 10px
+}
 
 /* Seccion 2: descubre aventuras*/
 .descubre{
+    padding: 5% 10% 5% 10%;
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.664)), url(../media/photo-mountains.jpg);
@@ -202,24 +263,36 @@ nav a {
     justify-content: center;
 }
 
-
-
 /* Seccion 3: Tipos de actividades*/
 .actividades{
     background-color: #ebebeb;
+    padding: 5% 10% 5% 10%;
     display: flex;
     flex-flow: column nowrap;
     text-align: center;
 }
 .cardIcon {
     width: 3rem;
-    margin-top: 8%;
     margin-bottom: 8%;
-    display: flex;
-    align-self: center;
+}
+
+
+
+/* Seccion 4: Explorar*/
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 0;
+    z-index: -1;
 }
 
 .explorar{
+    padding: 5% 10% 5% 10%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -227,17 +300,11 @@ nav a {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url(../media/mano-compas.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-
-
-
 
 /* Seccion 5: Suscribete al newsletter*/
 .newsletter{
+    padding: 5% 10% 5% 10%;
     background-color: #ffffff;
     display: flex;
     flex-flow: column wrap;
@@ -305,36 +372,58 @@ nav a {
 
 
 
-
-
-
 /* ------Sobre nosotros------ */
+.bodySobreNosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+}
 
 .sobreNosotrosImg {
+    padding: 8rem 5rem 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url(../media/woman-jump.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
     color: #ffffff;
 }
 
 .sobreNosotrosMision{
     background-color: #ffffff;
+    padding: 3rem 15% 3rem 15%;
 }
 
 #nosotrosImg1{
-    padding-bottom: 2%;
-    padding-top: 2%;
-    height: 337px;
-    object-fit: cover;
+    grid-area: nosotrosImg1;
 }
-
+#nosotrosImg2{
+    grid-area: nosotrosImg2;
+}
+#nosotrosImg3{
+    grid-area: nosotrosImg3;
+}
+.sobreNosotrosGalery {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,20rem);
+    grid-template-areas: 
+    "nosotrosImg1 nosotrosImg2"
+    "nosotrosImg3 nosotrosImg3"
+    ;
+}
+.sobreNosotrosGalery > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 .sobreNosotrosComunidad{
     background-color: #ebebeb;
+    padding: 3rem 15% 3rem 15%;
 }
 
 /* ------ Descubre ------ */
@@ -434,16 +523,158 @@ footer ul li {
     width: 2rem;
 }
 
-/* ----------Mobile---------- */
 
-@media screen and (max-width:570px){
-    h1 {
-        font-size: 40px;
+
+
+/* ----------Tablet---------- */
+@media screen and (max-width:768px) {
+    /* ------Menu de navegacion------ */
+/*     nav{
+        width: 94%;
+    } */
+
+    /* Seccion 5: Suscribete al newsletter*/
+    .newsletter input {
+        margin-top: 10px;
+    }
+    
+    /* ------Crear cuenta------ */
+    .seccionCrearCuenta {
+        display: block;
     }
 
-    .form-controlHome{
-        display: inline-block;
-        width: 100%;
+    .seccionImg {
+        display: none;
+    }
+        .seccionImg {
+        display: none;
+    }
+
+    .seccionInputs1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}
+
+
+
+
+
+/* ----------Mobile---------- */
+@media screen and (max-width:570px) {
+    /* ------config------ */
+    h1 {
+        font-size: 40px;
+        margin: 1rem 0 1rem 0;
+    }
+
+    /* ------botones e inputs------ */
+    .blackInput {
+        width: 14rem;
+    }
+    /* ------Menu de navegacion------ */
+   /*  nav{
+        height: 150px;
+        width: 95%;
+        display: grid;
+        padding: 1rem 2rem 1rem 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        justify-items: stretch;
+        align-items: center;
+    }
+    nav .navMenu{
+            display: flex;
+            justify-content: flex-start;
+        }
+    nav .navCuenta{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        } */
+
+
+    /* ------Home------ */
+    /* Seccion 1: Foto */
+    .headerFoto {
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        margin: 0 5% 0 5%;
+        width: 60%;
+    }
+    .headerFoto--direccion{
+        padding-bottom: 6rem;
+    }
+
+    #background-video {
+        width: 80rem;
+        height: 80rem;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    /* ------Crear cuenta------ */
+    #bodyCrear-cuenta{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+
+    .seccionCrearCuenta {
+        margin-top: 8rem;
+    }
+    .seccionImg {
+        display: none;
+    }
+
+    .seccionInputs1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+
+    .seccionDatos{
+        width: 65%;
+        margin: 5rem 4rem 5rem 4rem;
+        align-self: center;
+    }
+
+    .SeccionBoton {
+        align-self: center;
+    }
+
+    .seccionDatosTituloCambiar {
+        margin-bottom: 0;
+    }
+
+    /* ------Sobre nosotros------ */
+    .sobreNosotrosImg {
+        margin-top: 5rem;
+    }
+
+    /* ------Descubre------ */
+    .descubreImg {
+        padding-top: 8rem;
+    }
+    .containerBuscador{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    
+    .descubreBuscadorImg {
+        position: relative;
+        z-index: -1;
+        top: 5rem;
     }
     
 }

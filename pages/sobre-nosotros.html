@@ -12,90 +12,112 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- css y favicon -->
     <link rel="shortcut icon" href="../media/mountain-favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/stylesheet.css"> <!--importando hoja de estilos-->
+    
+    <!-- Instalar bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--importando MI hoja de estilos-->
+    <link rel="stylesheet" href="../css/stylesheet.css">
 
     <title>Deporte Aventura - Iniciar sesión</title>
 </head>
 
-<body class="bodySobreNosotros">
-    <header>
-        <nav>
-            <section class="navLogo">
-                <a href="../index.html">
-                    <img src="../media/mountain.svg" alt=logo>
-                </a>
-            </section>
-
-            <section class="navMenu">
-                <a href="descubre.html">
-                    <p class="hover-underline-animation">Descubre</p>
-                    
-                </a>
-                <a href="sobre-nosotros.html">
-                    <p class="hover-underline-animation">Nosotros</p>
-                </a>
-            </section>
-
-            <section class="navCuenta">
+<body class="container-fluid">
+    <header class="row">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+            <a class="navbar-brand navLogo" href="../index.html">
+                <img src="../media/mountain.svg" alt=logo>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active navHoverAnimation" aria-current="page" href="descubre.html">Descubre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="sobre-nosotros.html">Sobre nosortos</a>
+                </li>
+                </ul>
+                <div class="d-flex navbar-nav">
                 <a href="iniciar-sesion.html">
-                    <input type="button" value="Iniciar sesión" class="buttonLine">
+                    <button class="buttonLine my-2 my-sm-0" type="menu">Iniciar sesión</button>
                 </a>
                 <a href="crear-cuenta.html">
-                    <input type="button" value="Crea tu cuenta" class="buttonRegular">
+                    <button class="buttonRegular my-2 my-sm-0" type="menu">Crear cuentan</button>
                 </a>
-            </section>
+                </div>
+            </div>
+            </div>
         </nav>
-        <section class="sobreNosotrosImg">
-            <h1>Sobre Nosotros</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </section>
     </header>
 
-    <section class="sobreNosotrosMision">
-        <h2>Nuestra Misión</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni recusandae placeat sapiente consequuntur dolorem, soluta sint animi illo voluptas veniam, repellat quo officiis? Ipsum labore, repellendus blanditiis autem illo repellat?</p>
 
-        <div class="sobreNosotrosGalery">
+
+    <main class="row sobreNosotrosImg paddingLR">
+        <h1>Sobre Nosotros</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </main>
+
+
+
+    <section class="row sobreNosotrosMision paddingLR paddingTB">
+        <h2 class="col-lg-12">Nuestra Misión</h2>
+        <p class="col-lg-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni recusandae placeat sapiente consequuntur dolorem, soluta sint animi illo voluptas veniam, repellat quo officiis? Ipsum labore, repellendus blanditiis autem illo repellat?</p>
+
+
+        <img src="../media/woman-jump.jpg" alt="..." class="col-12" id="nosotrosImg1">
+        <img src="../media/woman-backpacker.jpg" alt="..." class="col-6">
+        <img src="../media/woman-view.jpg" alt="..." class="col-6">
+
+
+
+<!--         <div class="sobreNosotrosGalery">
         <img src="../media/woman-jump.jpg" alt="" id="nosotrosImg1">
         <img src="../media/woman-backpacker.jpg" alt="" id="nosotrosImg2">
         <img src="../media/woman-view.jpg" alt="" id="nosotrosImg3">
-        </div>
-
+        </div> -->
     </section>
 
-    <section class="sobreNosotrosComunidad">
-        <div class="section2Nosotros--title">
-            <h2>Forma parte de nuestra comunidad</h2>
+
+
+    <section class="row sobreNosotrosComunidad paddingLR paddingTB">
+        <div class="col-lg-12 section2Nosotros--title">
+            <h3>Forma parte de nuestra comunidad</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, nostrum veniam iure, corporis minus possimus quis cumque earum maxime soluta accusamus ipsam facere explicabo velit in ducimus quisquam fuga sed?</p>
         </div>
 
-        <div>
-            <h3>Generador de Aventuras</h3>
+        <div class="col-lg-12">
+            <h5>Generador de Aventuras</h5>
+            <p>¿Quieres publicar tus eventos, tours o actividades grupales? Aplica para ser un Generador de aventuras </p>
+            <hr>
+        </div>
+
+        <div class="col-lg-12">
+            <h5>Generador de Aventuras</h5>
             <p>¿Quieres publicar tus eventos, tours o actividades grupales? Aplica para ser un Generador de aventuras </p>
             <hr>
         </div>
 
         <div>
-            <h3>Generador de Aventuras</h3>
+            <h5>Generador de Aventuras</h5>
             <p>¿Quieres publicar tus eventos, tours o actividades grupales? Aplica para ser un Generador de aventuras </p>
             <hr>
         </div>
 
         <div>
-            <h3>Generador de Aventuras</h3>
-            <p>¿Quieres publicar tus eventos, tours o actividades grupales? Aplica para ser un Generador de aventuras </p>
-            <hr>
-        </div>
-
-        <div>
-            <h3>Generador de Aventuras</h3>
+            <h5>Generador de Aventuras</h5>
             <p>¿Quieres publicar tus eventos, tours o actividades grupales? Aplica para ser un Generador de aventuras </p>
             <hr>
         </div>
     </section>
 
+
     <!-- Footer -->
-    <footer>
+    <footer class="row">
         <div class="footerEmpresa">
             <img src="../media/mountain.svg" alt=logo>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -135,6 +157,13 @@
             </ul>
         </div>
     </footer>
+        <!-- Scripts para instalar bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 
 </body>
 

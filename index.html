@@ -9,96 +9,104 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!-- css y favicon -->
     <link rel="shortcut icon" href="media/mountain-favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/stylesheet.css"> <!--importando hoja de estilos-->
+
+    <!-- Instalar bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--importando MI hoja de estilos-->
+    <link rel="stylesheet" href="css/stylesheet.css">
 
     <title>Deporte Aventura - Home</title>
 </head>
 
-<body class="bodyHome">
-    <header class="headerHome">
-        <!-- Menu de navegacion -->
-        <nav>
-            <section class="navLogo">
-                <a href="index.html">
-                    <img src="media/mountain.svg" alt=logo>
-                </a>
-            </section>
-
-            <section class="navMenu">
-                <a href="pages/descubre.html">
-                    <p class="hover-underline-animation">Descubre</p>
-                </a>
-                <a href="pages/sobre-nosotros.html">
-                    <p class="hover-underline-animation">Nosotros</p> 
-                </a>
-            </section>
-
-            <section class="navCuenta">
+<body class="container-fluid">
+    <header class="row">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+            <a class="navbar-brand navLogo" href="index.html">
+                <img src="media/mountain.svg" alt=logo>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active navHoverAnimation" aria-current="page" href="pages/descubre.html">Descubre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="pages/sobre-nosotros.html">Sobre nosortos</a>
+                </li>
+                </ul>
+                <div class="d-flex navbar-nav">
                 <a href="pages/iniciar-sesion.html">
-                    <input type="button" value="Iniciar sesión" class="buttonLine">
+                    <button class="buttonLine my-2 my-sm-0" type="menu">Iniciar sesión</button>
                 </a>
                 <a href="pages/crear-cuenta.html">
-                    <input type="button" value="Crea tu cuenta" class="buttonRegular">
+                    <button class="buttonRegular my-2 my-sm-0" type="menu">Crear cuentan</button>
                 </a>
-            </section>
+                </div>
+            </div>
+            </div>
         </nav>
-
-        <!-- foto portada -->
-        <article class="headerFoto">
-            <section class="headerFoto--texto">
-                <h1>Tu aventura empieza hoy</h1>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaqu</p>
-            </section>
-
-            <section class="headerFoto--direccion">
-                <label for="buscaDireccion" class="direccion">Busca aventuras cerca de ti:</label>
-                <input type="text" name="buscaDireccion" placeholder="Ingresa una dirección" class="horizontal">
-                <input type="button" value="Buscar" class="buttonRegular">
-            </section>
-        </article>
     </header>
+
+    <!-- Foto de portada -->
+    <main class="row mainHome paddingLR">
+        <section class="col-lg-6 col-sm-12 mainFoto--texto">
+            <h1>Tu aventura empieza hoy</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaqu</p>
+        </section>
+
+        <section class="col-lg-8 col-sm-12 mainFoto--direccion">
+            <label for="buscaDireccion" class="direccion">Busca aventuras cerca de ti:</label>
+            <form class="form-inline">
+                <input type="text" class="form-control form-controlHome" id="inputAddress" placeholder="Santiago, Chile">
+                <button class="btn buttonBlack my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </section>
+    </main>
+
+
 
 
     <!-- Seccion aventuras -->
-    <article class="aventuras">
-        <h2>Aventuras destacadas</h2>
-        <section class="cardsContenedor">
-            <div class="card">
-                <img src="media/aguas-san-ramon.jpg" alt="">
-                <div class="cardTitle">
-                    <h3 class="cardText">Auguas san ramon</h3>
-                    <h5 class="cardText">Santiago de chile</h5>
-                </div>                
-                <div class="cardInfo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <input type="button" value="Descubrir aventura" class="buttonBlack">
+    <article class="row aventuras paddingLR paddingTB">
+        <h2 class="paddingTittle">Aventuras destacadas</h2>
+        <section class="col-12 cardsContenedor">
+            <div class="card" style="width: 20rem;">
+                <img src="media/saltos-del-petrohue.jpg" class="card-img-top" alt="Foto saltos del Petrohué">
+                <div class="card-body">
+                    <h5 class="card-title">Saltos del petrohue</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Chile, Los Lagos Puerto Varas</h6>
+                    <p class="card-text">Espectaculares cascadas ubicadas en un camino forestal dentro del parque nacional Vicente Pérez Rosales </p>
+                    <a href="#" class="btn buttonBlack">Ver detalles</a>
                 </div>
             </div>
-            
-            <div class="card">
-                <img src="media/aguas-san-ramon.jpg" alt="">
-                <div class="cardTitle">
-                    <h3 class="cardText">Auguas san ramon</h3>
-                    <h5 class="cardText">Santiago de chile</h5>
-                </div>                
-                <div class="cardInfo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <input type="button" value="Descubrir aventura" class="buttonBlack">
-                </div>
 
+            <div class="card" style="width: 20rem;">
+                <img src="media/entre-lagos-parque-huerquehue.jpg" class="card-img-top" alt="Foto entre lagos parque huerquehue">
+                <div class="card-body">
+                    <h5 class="card-title">Los Lagos de Huerquehue</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Chile, Araucanía, Pucón</h6>
+                    <p class="card-text">Maravillosa caminata que sigue un camino forestal que visita lagos, lagunas y cascadas.</p>
+                    <a href="#" class="btn buttonBlack">Ver detalles</a>
+                </div>
             </div>
-            <div class="card">
-                <img src="media/aguas-san-ramon.jpg" alt="">
-                <div class="cardTitle">
-                    <h3 class="cardText">Auguas san ramon</h3>
-                    <h5 class="cardText">Santiago de chile</h5>
-                </div>                
-                <div class="cardInfo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <input type="button" value="Descubrir aventura" class="buttonBlack">
+
+            <div class="card" style="width: 20rem;">
+                <img src="media/torres-del-paine.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Circuito W Torres del Paine</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Chile, Magallanes, Torres del paine</h6>
+                    <p class="card-text">Impresionante ruta entre glaciares, picos nevados, lagos y lagunas de aguas cristalinas.</p>
+                    <a href="#" class="btn buttonBlack">Ver detalles</a>
                 </div>
             </div>
         </section>
@@ -109,10 +117,10 @@
 
 
     <!-- Seccion descubre y comparte -->
-    <article class="descubre">
-        <h2>Descubre y comparte las mejores aventuras</h2>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
-        <input type="button" value="Crear cuenta" class="buttonBlack">
+    <article class="row descubre paddingLR paddingTB">
+        <h2 class="col-12">Descubre y comparte las mejores aventuras</h2>
+        <p class="col-lg-11 col-sm-12">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+        <a href="pages/crear-cuenta.html" class="btn buttonBlack"">Crear cuenta</a>
     </article>
 
 
@@ -120,39 +128,33 @@
 
 
     <!-- Seccion Tipos de actividades -->
-    <article class="actividades">
-        <h2>¿Qué actividad estás buscando?</h2>
-        <section class="cardsContenedor">
-            <div class="card">
-                <img src="media/mountain-favicon.svg" alt="icon" class="cardIcon">
-                <div class="cardTitle">
-                    <h3 class="cardText">Trekking</h3>
-                </div>
-                <div class="cardInfo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <input type="button" value="Explorar" class="buttonBlack">
-                </div>
-            </div>
-            
-            <div class="card">
-                <img src="media/mountain-favicon.svg" alt="icon" class="cardIcon">
-                <div class="cardTitle">
-                    <h3 class="cardText">Canyoning</h3>
-                </div>
-                <div class="cardInfo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <input type="button" value="Explorar" class="buttonBlack">
+    <article class="row actividades paddingLR paddingTB">
+        <h2 class="col-12 paddingTittle">¿Qué actividad estás buscando?</h2>
+        <section class="col-12 cardsContenedor">
+            <div class="card" style="width: 18rem;">
+                <img src="media/mountain-favicon.svg"" class="cardIcon" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Trekking</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="pages/descubre.html" class="btn buttonBlack">Descubrir</a>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="media/mountain-favicon.svg" alt="icon" class="cardIcon">
-                <div class="cardTitle">
-                    <h3 class="cardText">Rafting</h3>
+            <div class="card" style="width: 18rem;">
+                <img src="media/mountain-favicon.svg"" class="cardIcon" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Canyoning</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="pages/descubre.html" class="btn buttonBlack"">Descubrir</a>
                 </div>
-                <div class="cardInfo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <input type="button" value="Explorar" class="buttonBlack">
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="media/mountain-favicon.svg"" class="cardIcon" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Rafting</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="pages/descubre.html" class="btn buttonBlack"">Descubrir</a>
                 </div>
             </div>
         </section>
@@ -164,36 +166,43 @@
 
     <!-- Seccion Tipos de explorar -->
 
-    <article class="explorar">
-        <video id="background-video" autoplay loop muted poster="media/waterfall-background-frame.jpg">
-            <source src="media/waterfall-background.mp4" type="video/mp4">
-        </video>
-
-        <h2>Te ayudamos a encontrar
+    <article class="row explorar paddingLR paddingTB">
+        <h2 col-12>Te ayudamos a encontrar
             tu próxima aventura</h2>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
-        <a href="pages/descubre.html">
+        <p col-12>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+        <a href="pages/descubre.html" class="col-12">
             <input type="button" value="Explorar" class="buttonBlack">
         </a>
     </article>
 
-    <!-- Seccion suscribete al newsletter -->
-    <article class="newsletter">
-        <h2>Newsletter</h2>
-        <p>Suscríbete para recibir nuestros consejos para tu próxima aventura</p>
 
-        <section>
-            <input type="email" name="email" placeholder="Correo electrónico" class="blackInput">
-            <input type="button" value="Suscribirme" class="buttonBlack">
-        </section>
+
+
+    <!-- Seccion suscribete al newsletter -->
+    <article class="row newsletter paddingLR paddingTB">
+        <h2 class="col-12">Newsletter</h2>
+        <p class="col-lg-11 col-sm-12">Suscríbete para recibir nuestros consejos para tu próxima aventura</p>
+
+        <form>
+            <div class="form-row align-items-center">
+                <div class="col-auto">
+                    <input type="email" class="form-control form-controlHome mb-2" id="inputEmail3" placeholder="Correo electrónico">
+                </div>
+                
+                <div class="col-auto">
+                    <button type="submit" class="btn buttonBlack mb-2">Suscribirme</button>
+                </div>
+            </div>
+        </form>
     </article>
 
 
     <!-- Footer -->
-    <footer>
-        <div class="footerEmpresa">
+    <footer class="row">
+        <div class="col-12 footerEmpresa">
             <img src="media/mountain.svg" alt=logo>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
             <div class="footerSocialMedia">
                 <a href="https://www.facebook.com/" target="_blank">
                     <img src="media/facebook.svg" alt="facebook">
@@ -209,11 +218,10 @@
                     <img src="media/youtube.svg" alt="youtube">
                 </a>
             </div>
-            
         </div>
 
         <div class="footerExplora">
-            <h3>Explora</h3>
+            <h5>Explora</h5>
             <ul>
                 <li>Trekking</li>
                 <li>Canyoning</li>
@@ -223,7 +231,7 @@
         </div>
 
         <div class="footerColabora">
-            <h3>Colabora</h3>
+            <h5>Colabora</h5>
             <ul>
                 <li>Envía tus fotos</li>
                 <li>Comparte tus actividades</li>
@@ -231,5 +239,14 @@
         </div>
     </footer>
 
+    <!-- Scripts para instalar bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
