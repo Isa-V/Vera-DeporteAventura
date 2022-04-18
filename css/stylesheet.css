@@ -14,7 +14,6 @@ body{
 
 
 
-
 /* ----- paddings ------*/
 .paddingLR {
     padding-left: 10%;
@@ -66,9 +65,6 @@ h1 {
     transition: 0.2s ease-in;
 }
 .buttonLine:hover {
-/*     background-color: rgba(0, 0, 0, 0.05);
-    color: rgb(226, 226, 226);
-    border-color: rgb(226, 226, 226); */
     transition: 0.2s ease-in;
     background: #ffffff55;
     border: 2px solid #ffffff;
@@ -135,6 +131,10 @@ h1 {
 }
 nav a {
     margin: 2px 5px 2px 5px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #dadada;
 }
 
 
@@ -329,10 +329,8 @@ nav a {
 /* ------ Descubre ------ */
 
 .descubreBuscadorImg {
-    padding: 8rem 5rem 5rem 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 10rem 5rem 5rem 5rem;
+    text-align: center;
     background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url(../media/mano-compas.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -340,18 +338,26 @@ nav a {
     color: #ffffff;
 }
 
-
 .descubreBuscador{
     background-color: #e6e6e6;
     display: flex;
     flex-direction: column;
     padding: 5%;
 }
-.descubreBuscadorTipo{
-    display: grid;
-    grid-template-columns: 10% 90%;
-    margin-bottom: 1rem;
+.descubreBuscador .buscadorInput{
+    padding-top: 5%;
 }
+
+.descubreBuscadorTipos{
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.descubreBuscadorTipos h5 {
+    padding-bottom: 2%;
+}
+
+
 .descubreAventuras{
     padding: 5%
 }
@@ -417,6 +423,23 @@ footer ul li {
 .footerSocialMedia img {
     width: 2rem;
 }
+
+
+
+
+/* ----------Tablet---------- */
+@media screen and (max-width:768px) {
+
+    .seccionImg1 {
+        display: none;
+    }
+
+    .seccionImg2 {
+        display: none;
+    }
+
+}
+
 
 /* ----------Mobile---------- */
 
