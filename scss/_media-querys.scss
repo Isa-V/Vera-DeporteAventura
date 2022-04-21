@@ -1,0 +1,47 @@
+/* ----------Tablet---------- */
+@media screen and (max-width:768px) {
+
+    .seccionImg1 {
+        display: none;
+    }
+
+    .seccionImg2 {
+        display: none;
+    }
+
+}
+
+
+
+/* ----------Mobile---------- */
+
+@media screen and (max-width:570px){
+    h1 {
+        font-size: 40px;
+    }
+
+    .form-controlHome{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .seccionInputs {
+        height: 950px;
+    }
+
+    .seccionImg1 {
+        display: none;
+    }
+
+    .seccionImg2 {
+        display: none;
+    }
+    
+    .seccionCrearCuenta{
+        margin-top: 90px;
+    }
+
+    .descubreBuscadorImg {
+        padding: 8rem 3rem 3rem 3rem;
+    }
+}

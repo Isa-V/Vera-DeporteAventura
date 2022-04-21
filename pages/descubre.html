@@ -18,13 +18,13 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--importando MI hoja de estilos-->
-    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/main.css">
 
-    <title>Deporte Aventura - Descubre</title>
+    <title>Descubre: DeporteAventura</title>
 </head>
 
 <body class="container-fluid">
-    <header>
+    <header class="row">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
             <a class="navbar-brand navLogo" href="../index.html">
@@ -36,7 +36,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active navHoverAnimation" aria-current="page" href="descubre.html">Descubre</a>
+                    <a class="nav-link active" aria-current="page" href="descubre.html">Descubre</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="sobre-nosotros.html">Sobre nosortos</a>
@@ -47,7 +47,7 @@
                     <button class="buttonLine my-2 my-sm-0" type="menu">Iniciar sesión</button>
                 </a>
                 <a href="crear-cuenta.html">
-                    <button class="buttonRegular my-2 my-sm-0" type="menu">Crear cuentan</button>
+                    <button class="buttonRegular my-2 my-sm-0" type="menu">Crear cuenta</button>
                 </a>
                 </div>
             </div>
@@ -63,67 +63,113 @@
 
     <Section class="row containerBuscador">
         <div class="col-lg-4 col-md-5 col-sm-12 descubreBuscador">
-            <h2>Buscador</h2>
-            <label for="buscar">Destino/Ubicación</label>
-            <input type="text" name="buscar" placeholder="Ejemplo: Santiago, Chile" class="blackInputAuto">
-            <label for="fecha">Fecha de la aventura</label>
-            <input type="date" name="fecha" id="" class="blackInputAuto">
-            <label for="tipo">Tipo de Aventura</label>
-            <div class="descubreBuscadorTipo">
-                <input type="checkbox" name="tipo" id=""> Todas
-                <input type="checkbox" name="tipo" id=""> Trekking
-                <input type="checkbox" name="tipo" id=""> Canyoning
-                <input type="checkbox" name="tipo" id=""> Rafting
-                <input type="checkbox" name="tipo" id=""> Aire libre
-                <input type="checkbox" name="tipo" id=""> Senderismo
+
+
+            <h3>Buscador</h3>
+
+            <label for="inputDireccion" class="form-label buscadorInput">Dirección</label>
+            <input type="text" id="inputDireccion" class="form-control" placeholder="Ej: Santiago, Chile" >
+
+
+            <label for="inputfecha" class="form-label buscadorInput">Fecha</label>
+            <input type="date" id="inputfecha" class="form-control">
+
+            <div id="inputFecha" class="form-text">
+                Puedes omitir este si no tienes una fecha determinada por ahora
             </div>
+            
+            
+            <div class="descubreBuscadorTipos">
+                <h5> Tipo de aventura</h5>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault"> Default checkbox
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault"> Trekking
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault"> Canyoning
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault"> Rafting
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault"> Aire libre
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault"> Senderismo
+                    </label>
+                </div>
+
+            </div>
+            
 
             <input type="button" value="Buscar" class="buttonBlack">
         </div>
     
         <div class="col-lg-8 col-md-7 col-sm-12 descubreAventuras">
-
-
-            <div class="card mb-3" style="max-width: 540px;">
+            
+            <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="../media/entre-lagos-parque-huerquehue.jpg" class="img-fluid rounded-start" alt="...">
+                        <img src="../media/rafting-foto.jpg" class="img-fluid rounded-start" alt="Imagen Rafting Cajón del Maipo">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Aventura 1</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio neque sequi, libero inventore odio officiis dolore.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Rafting Cajón del Maipo</h5>
+                            <p class="card-text">
+                                Te invitamos a vivir la adrenalina de bajar por el río Maipo y disfrutar de la aventura con guías profesionales, preocupados 100% de tu seguridad y diversión.</p>
+                            <p class="card-text"><small class="text-muted">250 personas han asistido a este lugar</small></p>
+                            <a href="#" class="btn buttonBlack">Conocer más</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="../media/entre-lagos-parque-huerquehue.jpg" class="img-fluid rounded-start" alt="...">
+                        <img src="../media/cascada-foto.jpg" class="img-fluid rounded-start" alt="Imagen Cascadas cajon del Maipo">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Aventura 2</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Cascadas cajon del Maipo</h5>
+                            <p class="card-text">Te invitamos a vivir la experiencia donde podrás descender y aprender a hacer rapel en cascadas y disfrutar de la aventura con guías profesionales preocupados 100% de tu seguridad y diversión.</p>
+                            <p class="card-text"><small class="text-muted">1.569 personas han asistido a este lugar</small></p>
+                            <a href="#" class="btn buttonBlack">Conocer más</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3">
                 <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="../media/entre-lagos-parque-huerquehue.jpg" class="img-fluid rounded-start" alt="...">
+                    <div class="col-md-4 col-sm-12">
+                        <img src="../media/laguna-los-patos-foto.jpg" class="img-fluid rounded-start" alt="Imagen Laguna de los Patos">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-sm-12">
                         <div class="card-body">
-                            <h5 class="card-title">Aventura 3</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Laguna de los Patos</h5>
+                            <p class="card-text">Uno de los atractivos más populares entre los amantes del senderismo que visitan el Cajón del Maipo.</p>
+                            <p class="card-text"><small class="text-muted">1.550 personas han asistido a este lugar</small></p>
+                            <a href="#" class="btn buttonBlack">Conocer más</a>
                         </div>
                     </div>
                 </div>
