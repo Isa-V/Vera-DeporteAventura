@@ -21,20 +21,36 @@ nav {
     }
 }
 
+/* --- Generales --- */
+
+$mainsStyles:(
+    bgPos: center,
+    bgRep: no-repeat,
+    bgSize: cover,
+    disp: flex,
+    flexMain: column wrap,
+    justify: center,
+    txtColor: #ffffff
+);
+
+@mixin mainMix {
+    background-position: map-get($mainsStyles, bgPos);
+    background-repeat: map-get($mainsStyles, bgRep);
+    background-size: map-get($mainsStyles, bgSize);
+    display: map-get($mainsStyles, disp);
+    flex-flow: map-get($mainsStyles, flexMain);
+    justify-content: map-get($mainsStyles, justify);
+    color: map-get($mainsStyles, txtColor);
+}
+
 /* ------Home------ */
 /* Seccion 1: foto*/
 .mainHome {
     position: relative;
     margin-top: 70px;
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url(../media/index-photo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 600px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    color: #ffffff;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url(../media/index-photo.jpg);
+    @include mainMix
 }
 
 .mainFoto--texto{
@@ -72,16 +88,10 @@ nav {
 
 /* Seccion 2: descubre aventuras*/
 .descubre{
-    display: flex;
-    flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.664)), url(../media/photo-mountains.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    @include mainMix
 }
 
 
@@ -102,17 +112,10 @@ nav {
 }
 
 .explorar{
-    display: flex;
-    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url(../media/mano-compas.jpg);
     text-align: center;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url(../media/mano-compas.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include mainMix
 }
 
 
@@ -131,7 +134,7 @@ nav {
 
 
 
-/* ------Crear cuenta------ */
+/* ------Cuenta------ */
 
 
 .seccionCrearCuenta{
@@ -154,18 +157,16 @@ nav {
 
 .seccionImg1 {
     background-image: url(../media/woman-backpacker.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: map-get($mainsStyles, bgPos);
+    background-repeat: map-get($mainsStyles, bgRep);
+    background-size: map-get($mainsStyles, bgSize);
     height: 800px;
 }
 
 .seccionImg2 {
+    @extend .seccionImg1;
     background-image: url(../media/highway.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
+
 }
 .seccionCheckbox {
     margin-top: 2rem;
@@ -183,14 +184,8 @@ nav {
 
 .sobreNosotrosImg {
     background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url(../media/woman-jump.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 400px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    color: #ffffff;
+    @include mainMix
 }
 
 .sobreNosotrosMision{
@@ -214,10 +209,7 @@ nav {
     padding: 8rem 5rem 5rem 5rem;
     text-align: center;
     background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url(../media/mano-compas.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
+    @include mainMix
 }
 
 
@@ -258,9 +250,9 @@ nav {
     width: 30%;
     height: 100%;
     background-image:url(../media/mano-compas.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: map-get($mainsStyles, bgPos);
+    background-repeat: map-get($mainsStyles, bgRep);
+    background-size: map-get($mainsStyles, bgSize);
     margin-right: 0.5rem;
 }
 

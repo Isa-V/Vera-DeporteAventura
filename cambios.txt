@@ -1,0 +1,15 @@
+Los cambios realizados en esta entrega son:
+
+- Se agregó el map $mainsStyles en la sección comentada como "Generales" dentro del css:
+        Aquí se crearon los estilos que más se repiten dentro del sitio, que generalmente se aplican en el main de cada una de las páginas, así se pueden editar desde un solo punto del css.
+
+- Se agregó el mixin sin parámetros con las variables del map, ya que toda esa información se repite completa dentro de diferentes partes del sitio.
+
+- Se realizó un extend en:
+       - La sección comentada como "Cuenta" donde se aplican los mismos estilos para las imágenes que acompañan a un costado al formulario de crear cuenta e iniciar sesión.
+
+
+En cuanto a los cambios para mejorar el SEO, se agregaron las keywords, descripciones y títulos diferentes en cada una de las pages, siempre relacionado a la información presente en ella.
+
+Las imágenes ya se habían optimizado para la entrega anterior, achicando el tamaño de las fotos para las cards y usando los íconos en svg. Además se optimizaon las imágenes cambiandolas de 300dpi a 72dpi.
+       
