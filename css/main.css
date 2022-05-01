@@ -1,0 +1,362 @@
+/* ------Config------ */
+body {
+  margin: 0;
+  font-family: 'Heebo', sans-serif;
+  /* Cambiar color de fondo del navbar */
+  --bs-dark-rgb: 0,0,0; }
+
+/* ----- paddings ------*/
+.paddingLR {
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.paddingTB {
+  padding-top: 8%;
+  padding-bottom: 8%; }
+
+.paddingTittle {
+  padding-bottom: 4%; }
+
+/* ----- titles ------*/
+h1 {
+  font-size: 60px;
+  margin: 1rem 0 1rem 0; }
+
+/* ------botones e imputs------*/
+.buttonRegular {
+  background-color: white;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  border: none;
+  text-align: center;
+  width: fit-content;
+  transition: 0.2s ease-in; }
+  .buttonRegular:hover {
+    background-color: #e2e2e2;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05, 1.05); }
+
+.buttonLine {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: #dedede;
+  background: transparent;
+  border: 2px solid #dedede;
+  text-align: center;
+  width: fit-content;
+  outline: none;
+  transition: 0.2s ease-in; }
+  .buttonLine:hover {
+    transition: 0.2s ease-in;
+    background: #ffffff55;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    color: #dedede;
+    transform: scale(1.05, 1.05); }
+
+.buttonBlack {
+  background-color: black;
+  padding: 0.8rem 3rem 0.8rem 3rem;
+  border: none;
+  text-align: center;
+  color: white;
+  width: fit-content;
+  transition: 0.1s ease-in;
+  border-radius: 0; }
+  .buttonBlack:hover {
+    background-color: #00a870;
+    color: white;
+    border-color: black;
+    transform: scale(1.05, 1.05); }
+
+.horizontal {
+  background-color: white;
+  border: none;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  width: 40%; }
+
+.blackInput {
+  background-color: white;
+  border: solid;
+  border-color: #000000;
+  border-width: 2px;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  width: 320px; }
+
+.blackInputAuto {
+  background-color: white;
+  border: solid;
+  border-color: #000000;
+  border-width: 2px;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  margin: 5px; }
+
+.direccion {
+  display: block;
+  padding-bottom: 0.5rem; }
+
+/* ----------Tablet---------- */
+@media screen and (max-width: 768px) {
+  .seccionImg1, .seccionImg2 {
+    display: none; }
+  .seccionImg2 {
+    display: none; } }
+
+/* ----------Mobile---------- */
+@media screen and (max-width: 570px) {
+  h1 {
+    font-size: 40px; }
+  .form-controlHome {
+    display: inline-block;
+    width: 100%; }
+  .seccionInputs {
+    height: 950px; }
+  .seccionImg1, .seccionImg2 {
+    display: none; }
+  .seccionImg2 {
+    display: none; }
+  .seccionCrearCuenta {
+    margin-top: 90px; }
+  .descubreBuscadorImg {
+    padding: 8rem 3rem 3rem 3rem; } }
+
+/* ------Menu de navegacion con Bootstrap------ */
+.navLogo img {
+  width: 3rem; }
+
+.bg-dark {
+  background-color: black; }
+
+nav a {
+  margin: 2px 5px 2px 5px; }
+
+/* --- Generales --- */
+/* ------Home------ */
+/* Seccion 1: foto*/
+.mainHome {
+  position: relative;
+  margin-top: 70px;
+  height: 600px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../media/index-photo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  color: #ffffff; }
+
+.mainFoto--texto {
+  padding-bottom: 2rem; }
+
+.form-controlHome {
+  display: inline-block;
+  width: 50%; }
+
+/* Seccion 2: aventuras*/
+.aventuras {
+  background-color: #ebebeb;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center; }
+
+.cardsContenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.card {
+  margin-bottom: 5%; }
+
+/* Seccion 2: descubre aventuras*/
+.descubre {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.664)), url(../media/photo-mountains.jpg);
+  text-align: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  color: #ffffff; }
+
+/* Seccion 3: Tipos de actividades*/
+.actividades {
+  background-color: #ebebeb;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center; }
+
+.cardIcon {
+  width: 3rem;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  display: flex;
+  align-self: center; }
+
+.explorar {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../media/mano-compas.jpg);
+  text-align: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  color: #ffffff; }
+
+/* Seccion 5: Suscribete al newsletter*/
+.newsletter {
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column wrap;
+  color: #000000;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
+/* ------Cuenta------ */
+.seccionCrearCuenta {
+  margin-top: 75px;
+  align-items: center; }
+
+.seccionDatos {
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-top: 5%;
+  height: 800px; }
+
+.seccionDatosTitulo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; }
+
+.seccionImg1, .seccionImg2 {
+  background-image: url(../media/woman-backpacker.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px; }
+
+.seccionImg2 {
+  background-image: url(../media/highway.jpg); }
+
+.seccionCheckbox {
+  margin-top: 2rem; }
+
+.SeccionBoton {
+  margin-top: 2rem; }
+
+/* ------Sobre nosotros------ */
+.sobreNosotrosImg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../media/woman-jump.jpg);
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  color: #ffffff; }
+
+.sobreNosotrosMision {
+  background-color: #ffffff; }
+
+#nosotrosImg1 {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  height: 337px;
+  object-fit: cover; }
+
+.sobreNosotrosComunidad {
+  background-color: #ebebeb; }
+
+/* ------ Descubre ------ */
+.descubreBuscadorImg {
+  padding: 8rem 5rem 5rem 5rem;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../media/mano-compas.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  color: #ffffff; }
+
+.descubreBuscador {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  padding: 5%; }
+
+.descubreBuscador .buscadorInput {
+  padding-top: 5%; }
+
+.descubreBuscadorTipos {
+  padding-top: 8%;
+  padding-bottom: 8%; }
+
+.descubreBuscadorTipos h5 {
+  padding-bottom: 2%; }
+
+.descubreAventuras {
+  padding: 5%; }
+
+.cardBuscarAventura {
+  background-color: #e6e6e6;
+  display: flex;
+  margin-bottom: 1rem; }
+
+.cardBuscarAventuraImg {
+  width: 30%;
+  height: 100%;
+  background-image: url(../media/mano-compas.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 0.5rem; }
+
+/* ------Footer------ */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  padding: 3% 5% 2% 3%;
+  flex-flow: row wrap;
+  justify-items: stretch;
+  gap: 1%; }
+
+.footerEmpresa {
+  width: 500px;
+  display: flex;
+  flex-direction: column; }
+
+.footerExplora {
+  width: 300px; }
+
+.footerColabora {
+  width: 300px; }
+
+footer ul {
+  direction: none;
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 24px; }
+  footer ul li {
+    padding-bottom: 8px; }
+
+.footerEmpresa img {
+  width: 4rem;
+  padding-bottom: 24px; }
+
+.footerSocialMedia {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem; }
+
+.footerSocialMedia img {
+  width: 2rem; }

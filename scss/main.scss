@@ -1,0 +1,316 @@
+@import "configs";
+@import "media-querys";
+
+
+
+/* ------Menu de navegacion con Bootstrap------ */
+.navLogo {
+
+    img {
+        width: 3rem;
+    }
+}
+
+.bg-dark {
+    background-color: rgb(0, 0, 0);
+}
+
+nav {
+    a {
+        margin: 2px 5px 2px 5px;
+    }
+}
+
+/* --- Generales --- */
+
+$mainsStyles:(
+    bgPos: center,
+    bgRep: no-repeat,
+    bgSize: cover,
+    disp: flex,
+    flexMain: column wrap,
+    justify: center,
+    txtColor: #ffffff
+);
+
+@mixin mainMix {
+    background-position: map-get($mainsStyles, bgPos);
+    background-repeat: map-get($mainsStyles, bgRep);
+    background-size: map-get($mainsStyles, bgSize);
+    display: map-get($mainsStyles, disp);
+    flex-flow: map-get($mainsStyles, flexMain);
+    justify-content: map-get($mainsStyles, justify);
+    color: map-get($mainsStyles, txtColor);
+}
+
+/* ------Home------ */
+/* Seccion 1: foto*/
+.mainHome {
+    position: relative;
+    margin-top: 70px;
+    height: 600px;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url(../media/index-photo.jpg);
+    @include mainMix
+}
+
+.mainFoto--texto{
+    padding-bottom: 2rem;
+}
+
+.form-controlHome{
+    display: inline-block;
+    width: 50%;
+}
+
+
+
+
+
+
+/* Seccion 2: aventuras*/
+.aventuras{
+    background-color: #ebebeb;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+.cardsContenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-bottom: 5%;
+}
+
+
+/* Seccion 2: descubre aventuras*/
+.descubre{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.664)), url(../media/photo-mountains.jpg);
+    text-align: center;
+    align-items: center;
+    @include mainMix
+}
+
+
+
+/* Seccion 3: Tipos de actividades*/
+.actividades{
+    background-color: #ebebeb;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+.cardIcon {
+    width: 3rem;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    display: flex;
+    align-self: center;
+}
+
+.explorar{
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url(../media/mano-compas.jpg);
+    text-align: center;
+    align-items: center;
+    @include mainMix
+}
+
+
+
+
+/* Seccion 5: Suscribete al newsletter*/
+.newsletter{
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: column wrap;
+    color: #000000;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* ------Cuenta------ */
+
+
+.seccionCrearCuenta{
+    margin-top: 75px;
+    align-items: center;
+}
+
+.seccionDatos {
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 5%;
+    height: 800px;
+}
+
+.seccionDatosTitulo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.seccionImg1 {
+    background-image: url(../media/woman-backpacker.jpg);
+    background-position: map-get($mainsStyles, bgPos);
+    background-repeat: map-get($mainsStyles, bgRep);
+    background-size: map-get($mainsStyles, bgSize);
+    height: 800px;
+}
+
+.seccionImg2 {
+    @extend .seccionImg1;
+    background-image: url(../media/highway.jpg);
+
+}
+.seccionCheckbox {
+    margin-top: 2rem;
+}
+.SeccionBoton{
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+/* ------Sobre nosotros------ */
+
+.sobreNosotrosImg {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url(../media/woman-jump.jpg);
+    height: 400px;
+    @include mainMix
+}
+
+.sobreNosotrosMision{
+    background-color: #ffffff;
+}
+
+#nosotrosImg1{
+    padding-bottom: 2%;
+    padding-top: 2%;
+    height: 337px;
+    object-fit: cover;
+}
+
+.sobreNosotrosComunidad{
+    background-color: #ebebeb;
+}
+
+/* ------ Descubre ------ */
+
+.descubreBuscadorImg {
+    padding: 8rem 5rem 5rem 5rem;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url(../media/mano-compas.jpg);
+    @include mainMix
+}
+
+
+.descubreBuscador{
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.descubreBuscador {
+    .buscadorInput{
+        padding-top: 5%;
+    }
+}
+
+
+.descubreBuscadorTipos{
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.descubreBuscadorTipos {
+    h5 {
+        padding-bottom: 2%;
+    }
+}
+
+.descubreAventuras{
+    padding: 5%
+}
+.cardBuscarAventura{
+    background-color: #e6e6e6;
+    display: flex;
+    margin-bottom: 1rem;
+}
+.cardBuscarAventuraImg{
+    width: 30%;
+    height: 100%;
+    background-image:url(../media/mano-compas.jpg);
+    background-position: map-get($mainsStyles, bgPos);
+    background-repeat: map-get($mainsStyles, bgRep);
+    background-size: map-get($mainsStyles, bgSize);
+    margin-right: 0.5rem;
+}
+
+
+
+
+/* ------Footer------ */
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    padding: 3% 5% 2% 3%;
+    flex-flow: row wrap;
+    justify-items: stretch;
+    gap: 1%;
+}
+.footerEmpresa {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.footerExplora {
+    width: 300px;
+}
+
+.footerColabora {
+    width: 300px;
+}
+
+footer {
+    ul {
+        direction: none;
+        list-style-type: none;
+        padding: 0;
+        padding-bottom: 24px;
+
+        li {
+            padding-bottom: 8px;
+        }
+    }
+}
+
+
+
+.footerEmpresa {
+    img {
+        width: 4rem;
+        padding-bottom: 24px;
+    }
+}
+
+.footerSocialMedia {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.footerSocialMedia {
+    img {
+        width: 2rem;
+    }
+}
