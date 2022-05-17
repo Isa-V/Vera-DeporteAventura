@@ -100,7 +100,14 @@ h1 {
   .seccionImg1, .seccionImg2 {
     display: none; }
   .seccionImg2 {
-    display: none; } }
+    display: none; }
+  .cardDescubre {
+    flex-direction: column; }
+  .card-img {
+    width: 100% !important;
+    height: 300px; }
+  .card-content {
+    width: 100% !important; } }
 
 /* ----------Mobile---------- */
 @media screen and (max-width: 570px) {
@@ -306,19 +313,37 @@ nav a {
 .descubreAventuras {
   padding: 5%; }
 
-.cardBuscarAventura {
-  background-color: #e6e6e6;
+.cardDescubre {
   display: flex;
-  margin-bottom: 1rem; }
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cecece; }
 
-.cardBuscarAventuraImg {
-  width: 30%;
-  height: 100%;
-  background-image: url(../media/mano-compas.jpg);
+.card-img {
+  width: 40%;
+  background-color: #000000; }
+
+.card-content {
+  width: 70%;
+  padding: 3%; }
+
+#cascadasCajonFoto {
+  background-image: url(../media/cascada-foto.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-right: 0.5rem; }
+  background-size: cover; }
+
+#raftingCajonFoto {
+  background-image: url(../media/rafting-foto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#lagunaPatosFoto {
+  background-image: url(../media/laguna-los-patos-foto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /* ------Footer------ */
 footer {

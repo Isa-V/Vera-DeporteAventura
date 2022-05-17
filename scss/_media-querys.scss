@@ -9,6 +9,21 @@
         display: none;
     }
 
+    .cardDescubre {
+        flex-direction: column;
+    }
+
+    .card-img{
+        width: 100% !important;
+        height: 300px;
+    }
+    
+    .card-content {
+        width: 100% !important;
+    }
+    
+    
+
 }
 
 
@@ -44,4 +59,5 @@
     .descubreBuscadorImg {
         padding: 8rem 3rem 3rem 3rem;
     }
+    
 }

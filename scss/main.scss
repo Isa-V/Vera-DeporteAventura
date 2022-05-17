@@ -16,6 +16,7 @@
 }
 
 nav {
+    
     a {
         margin: 2px 5px 2px 5px;
     }
@@ -241,21 +242,45 @@ $mainsStyles:(
 .descubreAventuras{
     padding: 5%
 }
-.cardBuscarAventura{
-    background-color: #e6e6e6;
+
+.cardDescubre {
     display: flex;
-    margin-bottom: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cecece;
+
 }
-.cardBuscarAventuraImg{
-    width: 30%;
-    height: 100%;
-    background-image:url(../media/mano-compas.jpg);
+
+.card-img{
+    width: 40%;
+    background-color: #000000;
+}
+
+.card-content {
+    width: 70%;
+    padding: 3%;
+}
+
+#cascadasCajonFoto{
+    background-image: url(../media/cascada-foto.jpg);
     background-position: map-get($mainsStyles, bgPos);
     background-repeat: map-get($mainsStyles, bgRep);
     background-size: map-get($mainsStyles, bgSize);
-    margin-right: 0.5rem;
 }
 
+#raftingCajonFoto{
+    background-image: url(../media/rafting-foto.jpg);
+    background-position: map-get($mainsStyles, bgPos);
+    background-repeat: map-get($mainsStyles, bgRep);
+    background-size: map-get($mainsStyles, bgSize);
+}
+
+#lagunaPatosFoto{
+    background-image: url(../media/laguna-los-patos-foto.jpg);
+    background-position: map-get($mainsStyles, bgPos);
+    background-repeat: map-get($mainsStyles, bgRep);
+    background-size: map-get($mainsStyles, bgSize);
+}
 
 
 
