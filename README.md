@@ -12,3 +12,5 @@ Se utilizó scss para ahorrar líneas de código
 
 Nombre: Isabel Vera
 Proyecto: Coderhouse
+
+En las ramas del proyecto se pueden ver las versiones que fueron cambiando paso a paso a medida que se fue avanzando en el curso y mejorando el proyecto. La rama main tiene todos los cambios aplicados y la última versión estable y terminada.
